@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../20260225_fork_join.srcs/sim_1/new/tb_fork_join_any_sv.sv" \
+"../../../../20260225_fork_join.srcs/sim_1/new/tb_fork_join_none_sv.sv" \
+"../../../../20260225_fork_join.srcs/sim_1/new/tb_fork_join_sv.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

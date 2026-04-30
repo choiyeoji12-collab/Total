@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../20260306_RV32I_R.srcs/sources_1/new" \
+"../../../../20260306_RV32I_R.srcs/sources_1/new/RV32I_cpu.sv" \
+"../../../../20260306_RV32I_R.srcs/sources_1/new/RV32I_datapath.sv" \
+"../../../../20260306_RV32I_R.srcs/sources_1/new/RV32I_top.sv" \
+"../../../../20260306_RV32I_R.srcs/sources_1/new/data_mem.sv" \
+"../../../../20260306_RV32I_R.srcs/sources_1/new/instruction_mem.sv" \
+"../../../../20260306_RV32I_R.srcs/sim_1/new/tb_rv32i.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

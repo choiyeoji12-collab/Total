@@ -1,0 +1,41 @@
+/*
+ * UpCounter.c
+ *
+ *  Created on: 2026. 4. 28.
+ *      Author: kccistc
+ */
+
+#include "UpCounter.h"
+
+uint16_t counter = 0;
+
+void UpCounter_Init()
+{
+	FND_Init();
+	counter = 0;
+}
+
+void UpCounter_Excute()
+{
+	UpCounter_DispLoop();
+	UpCounter_Run();
+}
+
+void UpCounter_DispLoop()
+{
+	FND_DispDigit();
+}
+
+void UpCounter_Run()
+{
+	static uint32_t prevTimeCounter = 0;
+		FND_DispDigit();
+
+		if (millis() - prevTimeCounter < 100-1 ) {
+			return;
+		}
+
+		prevTimeCounter = millis();
+
+		FND_SetNum(counter++);
+}

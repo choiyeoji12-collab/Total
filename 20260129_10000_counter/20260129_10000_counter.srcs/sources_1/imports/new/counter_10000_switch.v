@@ -1,0 +1,134 @@
+`timescale 1ns / 1ps
+
+module top_module (
+    input        clk,
+    input        reset,
+    input        mode,
+    input        sw,
+    input        btn_r,
+    input        btn_l,
+    output [3:0] fnd_digit,
+    output [7:0] fnd_data
+);
+
+    wire [13:0] w_counter;
+    wire w_tick_10hz;
+    wire w_mode, w_run_stop, w_clear;
+    wire o_btn_run_stop, o_btn_clear;
+
+    btn_debounce U_BD_RUNSTOP (
+        .clk  (clk),
+        .reset(reset),
+        .i_btn(btn_r),
+        .o_btn(o_btn_run_stop)
+    );
+
+    btn_debounce U_BD_CLEAR (
+        .clk  (clk),
+        .reset(reset),
+        .i_btn(btn_r),
+        .o_btn(o_btn_clear)
+    );
+
+    control_unit U_CONTROL_UNIT (
+        .clk       (clk),
+        .reset     (reset),
+        .i_mode    (sw),
+        .i_run_stop(o_btn_run_stop),
+        .i_clear   (o_btn_clear),
+        .o_mode    (w_mode),
+        .o_run_stop(w_run_stop),
+        .o_clear   (w_clear)
+    );
+
+    tick_gen_10hz U_TICK_GEN (
+        .clk        (clk),
+        .reset      (reset),
+        .i_run_stop (w_run_stop),
+        .o_tick_10hz(w_tick_10hz)
+    );
+
+    counter_10000 U_COUNTER_10000 (
+        .clk     (clk),
+        .reset   (reset),
+        .mode    (w_mode),
+        .i_tick  (w_tick_10hz),
+        .run_stop(w_run_stop),
+        .clear   (w_clear),
+        .counter (w_counter)
+    );
+
+    fnd_controller U_FND_cNTL (
+        .clk        (clk),
+        .reset      (reset),
+        .fnd_in_data(w_counter),
+        .fnd_digit  (fnd_digit),
+        .fnd_data   (fnd_data)
+    );
+
+endmodule
+
+module tick_gen_10hz (
+    input      clk,
+    input      reset,
+    input      i_run_stop,
+    output reg o_tick_10hz
+);
+
+    reg [$clog2(10_000_000)-1:0] r_counter;
+
+    always @(posedge clk, posedge reset) begin
+        if (reset) begin
+            r_counter   <= 0;
+            o_tick_10hz <= 1'b0;
+        end else begin
+            if (i_run_stop) begin
+                r_counter <= r_counter + 1;
+                if (r_counter == (10_000_000 - 1)) begin
+                    r_counter   <= 0;
+                    o_tick_10hz <= 1'b1;
+                end else begin
+                    o_tick_10hz <= 1'b0;
+                end
+            end
+        end
+    end
+
+endmodule
+
+module counter_10000 (
+    input         clk,
+    input         reset,
+    input         i_tick,
+    input         mode,
+    input         run_stop,
+    input         clear,
+    output [13:0] counter
+);
+
+    reg [13:0] r_counter;
+
+    assign counter = r_counter;
+
+    always @(posedge clk, posedge reset) begin
+        if (reset || clear) begin
+            //reset init
+            r_counter <= 14'd0;
+        end else begin
+            //to do
+            if (run_stop) begin
+                if (mode == 0) begin
+                    if (i_tick == 1) begin
+                        r_counter <= r_counter + 1;
+                        if (r_counter == (10000 - 1)) r_counter <= 0;
+                    end
+                end else begin
+                    if (i_tick == 1) begin
+                        r_counter <= r_counter - 1;
+                        if (r_counter == 0) r_counter <= 9999;
+                    end
+                end
+            end
+        end
+    end
+endmodule

@@ -1,0 +1,31 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../edit_GPIO_FND_v1_0.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "GPIO_0": "",
+      "GPIO_FND_0": ""
+    },
+    "components": {
+      "GPIO_0": {
+        "vlnv": "xilinx.com:user:GPIO:1.0",
+        "xci_name": "design_1_GPIO_0_0",
+        "xci_path": "ip\\design_1_GPIO_0_0\\design_1_GPIO_0_0.xci",
+        "inst_hier_path": "GPIO_0"
+      },
+      "GPIO_FND_0": {
+        "vlnv": "xilinx.com:user:GPIO_FND:1.0",
+        "xci_name": "design_1_GPIO_FND_0_0",
+        "xci_path": "ip\\design_1_GPIO_FND_0_0\\design_1_GPIO_FND_0_0.xci",
+        "inst_hier_path": "GPIO_FND_0"
+      }
+    }
+  }
+}

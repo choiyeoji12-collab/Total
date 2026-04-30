@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../UART.srcs/sources_1/new/ascii_decoder.v" \
+"../../../../UART.srcs/sources_1/new/ascii_sender.v" \
+"../../../../UART.srcs/sources_1/imports/new/btn_debounce.v" \
+"../../../../UART.srcs/sources_1/imports/new/control_unit.v" \
+"../../../../UART.srcs/sources_1/imports/new/fnd_controller.v" \
+"../../../../UART.srcs/sources_1/imports/choiyeoji/stopwatch_watch/stopwatch_watch.srcs/sources_1/new/stopwatch_watch.v" \
+"../../../../UART.srcs/sources_1/new/uart_loop_back.v" \
+"../../../../UART.srcs/sources_1/new/uart_top.v" \
+"../../../../UART.srcs/sim_1/new/tb_uart.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

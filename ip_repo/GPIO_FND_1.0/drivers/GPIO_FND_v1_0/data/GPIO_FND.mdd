@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER GPIO_FND
+	OPTION supported_peripherals = (GPIO_FND);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = GPIO_FND;
+END DRIVER

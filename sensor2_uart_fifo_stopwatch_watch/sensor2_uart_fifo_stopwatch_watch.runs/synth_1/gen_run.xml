@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1771578139">
+  <File Type="PA-TCL" Name="top_sensor2_uart_fifo_stopwatch_watch.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_sensor2_uart_fifo_stopwatch_watch_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_sensor2_uart_fifo_stopwatch_watch_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_sensor2_uart_fifo_stopwatch_watch.vds"/>
+  <File Type="RDS-UTIL" Name="top_sensor2_uart_fifo_stopwatch_watch_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_sensor2_uart_fifo_stopwatch_watch_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_sensor2_uart_fifo_stopwatch_watch.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_sensor2_uart_fifo_stopwatch_watch_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_sensor2_uart_fifo_stopwatch_watch_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/choiyeoji/20260212_SR04/20260212_SR04.srcs/sources_1/new/SR04_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../20260212_SR04/20260212_SR04.srcs/sources_1/new/SR04_controller.v"/>
+        <Attr Name="ImportTime" Val="1770942581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/choiyeoji/UART/UART.srcs/sources_1/new/ascii_decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/new/ascii_decoder.v"/>
+        <Attr Name="ImportTime" Val="1771494521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/choiyeoji/UART/UART.srcs/sources_1/new/ascii_sender.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/new/ascii_sender.v"/>
+        <Attr Name="ImportTime" Val="1771494518"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/choiyeoji/UART/UART.srcs/sources_1/imports/new/btn_debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/new/btn_debounce.v"/>
+        <Attr Name="ImportTime" Val="1769743748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/control_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/new/control_unit.v"/>
+        <Attr Name="ImportTime" Val="1770253041"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/choiyeoji/20260213_dht11/20260213_dht11.srcs/sources_1/new/dht11_countroller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../20260213_dht11/20260213_dht11.srcs/sources_1/new/dht11_countroller.v"/>
+        <Attr Name="ImportTime" Val="1771547205"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_control_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../20260212_uart_fifo/20260212_uart_fifo.srcs/sources_1/imports/new/fifo.v"/>
+        <Attr Name="ImportTime" Val="1770790905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fnd_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/stopwatch_watch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../UART/UART.srcs/sources_1/imports/choiyeoji/stopwatch_watch/stopwatch_watch.srcs/sources_1/new/stopwatch_watch.v"/>
+        <Attr Name="ImportTime" Val="1771492652"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/uart_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../20260212_uart_fifo/20260212_uart_fifo.srcs/sources_1/imports/new/uart_top.v"/>
+        <Attr Name="ImportTime" Val="1770858954"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_sensor2_uart_fifo_stopwatch_watch.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_sensor2_uart_fifo_stopwatch_watch"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/choiyeoji/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1768979208"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

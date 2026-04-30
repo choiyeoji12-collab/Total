@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "../../../../260427_MicroBlaze_GPIO.gen/sources_1/bd/design_1/ipshared/d0f7" --include "../../../../260427_MicroBlaze_GPIO.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" \
+"../../../bd/design_1/ipshared/16fd/hdl/GPIO8_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/16fd/hdl/GPIO8_v1_0.v" \
+"../../../bd/design_1/ip/design_1_GPIO8_0_0/sim/design_1_GPIO8_0_0.v" \
+"../../../bd/design_1/ip/design_1_GPIO8_1_0/sim/design_1_GPIO8_1_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

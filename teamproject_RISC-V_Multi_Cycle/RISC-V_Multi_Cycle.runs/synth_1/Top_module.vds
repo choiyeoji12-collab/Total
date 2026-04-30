@@ -1,0 +1,569 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 30 09:08:10 2026
+# Process ID: 2764
+# Current directory: D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.runs/synth_1
+# Command line: vivado.exe -log Top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_module.tcl
+# Log file: D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.runs/synth_1/Top_module.vds
+# Journal file: D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_module.tcl -notrace
+Command: synth_design -top Top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21372
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1118.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_module' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/Top_module.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_CPU' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/Top_CPU.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/control.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/control.sv:142]
+INFO: [Synth 8-6155] done synthesizing module 'control' (1#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/control.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/datapath.sv:3]
+INFO: [Synth 8-226] default block is never used [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/datapath.sv:86]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/pc_reg.sv:3]
+	Parameter RESET_PC bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (2#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/pc_reg.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_n' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/reg_n.sv:3]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_n' (3#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/reg_n.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_n__parameterized0' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/reg_n.sv:3]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter RESET_VALUE bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_n__parameterized0' (3#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/reg_n.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/register_file.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (4#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/register_file.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'imm_extender' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/imm_extender.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'imm_extender' (5#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/imm_extender.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/alu.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/alu.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'branch_cmp' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/branch_cmp.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'branch_cmp' (7#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/branch_cmp.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (8#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/datapath.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_CPU' (9#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/Top_CPU.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Top_Memory_CNTL' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/Top_Memory_CNTL.sv:3]
+	Parameter ROM_BASE bound to: 0 - type: integer 
+	Parameter ROM_BYTES bound to: 4096 - type: integer 
+	Parameter RAM_BASE bound to: 268435456 - type: integer 
+	Parameter RAM_BYTES bound to: 4096 - type: integer 
+	Parameter MMIO_BASE bound to: 536870912 - type: integer 
+	Parameter MMIO_BYTES bound to: 20480 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Top_Memory_CNTL' (10#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/Top_Memory_CNTL.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_Memory' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/Top_Memory.sv:3]
+	Parameter ROM_BASE bound to: 0 - type: integer 
+	Parameter RAM_BASE bound to: 268435456 - type: integer 
+	Parameter MEM_BYTES bound to: 4096 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rom_table' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/rom_table.sv:3]
+	Parameter CODE_BASE bound to: 0 - type: integer 
+	Parameter ROM_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'program.mem' is read successfully [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/rom_table.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'rom_table' (11#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/rom_table.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/data_memory.sv:3]
+	Parameter DATA_BASE bound to: 268435456 - type: integer 
+	Parameter RAM_DEPTH bound to: 1024 - type: integer 
+	Parameter RAM_BYTES bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (12#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/data_memory.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Memory' (13#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/cpu/Top_Memory.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_APB' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/Top_APB.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'APB_master' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/APB_master_compat.sv:3]
+	Parameter ADDR_WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter NUM_SLAVES bound to: 32'sb00000000000000000000000000000110 
+	Parameter SLAVE_BASE bound to: 192'b001000000000000001000000000000000010000000000000001100000000000000100000000000000010000000000000001000000000000000010000000000000010000000000000000000000000000000110000000000000000000000000000 
+	Parameter SLAVE_MASK bound to: 192'b111111111111111111110000000000001111111111111111111100000000000011111111111111111111000000000000111111111111111111110000000000001111111111111111111100000000000011111111111111111111000000000000 
+INFO: [Synth 8-6157] synthesizing module 'apb_mmio_bridge' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_mmio_bridge.sv:3]
+	Parameter ADDR_WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter STRB_WIDTH bound to: 32'sb00000000000000000000000000000100 
+	Parameter NUM_SLAVES bound to: 32'sb00000000000000000000000000000110 
+	Parameter SLAVE_BASE bound to: 192'b001000000000000001000000000000000010000000000000001100000000000000100000000000000010000000000000001000000000000000010000000000000010000000000000000000000000000000110000000000000000000000000000 
+	Parameter SLAVE_MASK bound to: 192'b111111111111111111110000000000001111111111111111111100000000000011111111111111111111000000000000111111111111111111110000000000001111111111111111111100000000000011111111111111111111000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'apb_mmio_bridge' (14#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_mmio_bridge.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'APB_master' (15#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/APB_master_compat.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gpo_apb_wrapper' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/gpo_apb_wrapper.sv:3]
+	Parameter GPO_CTL_ADDR bound to: 8'b00000000 
+	Parameter GPO_ODATA_ADDR bound to: 8'b00000100 
+INFO: [Synth 8-6157] synthesizing module 'GPO' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPO.sv:3]
+	Parameter GPO_CTL_ADDR bound to: 12'b000000000000 
+	Parameter GPO_ODATA_ADDR bound to: 12'b000000000100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPO.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'GPO' (16#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPO.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpo_apb_wrapper' (17#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/gpo_apb_wrapper.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gpi_apb_wrapper' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/gpi_apb_wrapper.sv:3]
+	Parameter GPI_CTL_ADDR bound to: 8'b00000000 
+	Parameter GPI_IDATA_ADDR bound to: 8'b00000100 
+INFO: [Synth 8-6157] synthesizing module 'GPI' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPI.sv:3]
+	Parameter GPI_CTL_ADDR bound to: 12'b000000000000 
+	Parameter GPI_IDATA_ADDR bound to: 12'b000000000100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPI.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'GPI' (18#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPI.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpi_apb_wrapper' (19#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/gpi_apb_wrapper.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_apb_wrapper' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/gpio_apb_wrapper.sv:3]
+	Parameter GPIO_CTL_ADDR bound to: 8'b00000000 
+	Parameter GPIO_ODATA_ADDR bound to: 8'b00000100 
+	Parameter GPIO_IDATA_ADDR bound to: 8'b00001000 
+INFO: [Synth 8-6157] synthesizing module 'GPIO' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPIO.sv:3]
+	Parameter GPIO_CTL_ADDR bound to: 12'b000000000000 
+	Parameter GPIO_ODATA_ADDR bound to: 12'b000000000100 
+	Parameter GPIO_IDATA_ADDR bound to: 12'b000000001000 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPIO.sv:35]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPIO.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (20#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPIO.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO' (21#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/GPIO.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_apb_wrapper' (22#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/GPIO_peri/gpio_apb_wrapper.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'apb_regs' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_regs.sv:3]
+	Parameter DW bound to: 32'sb00000000000000000000000000100000 
+	Parameter AW bound to: 32'sb00000000000000000000000000001000 
+	Parameter ID_VALUE bound to: 1179534384 - type: integer 
+	Parameter ADDR_ID bound to: 8'b00000000 
+	Parameter ADDR_CONTROL32 bound to: 8'b00000100 
+	Parameter ADDR_CONTROL16 bound to: 8'b00001000 
+	Parameter ADDR_CONTROL8 bound to: 8'b00001100 
+	Parameter ADDR_STATUS32 bound to: 8'b00010100 
+	Parameter ADDR_STATUS16 bound to: 8'b00011000 
+	Parameter ADDR_STATUS8 bound to: 8'b00011100 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_regs.sv:62]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_regs.sv:75]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_regs.sv:91]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_regs.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'apb_regs' (23#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/apb_regs.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_apb_wrapper' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_apb_wrapper.v:3]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter ADDR_ID bound to: 8'b00000000 
+	Parameter ADDR_STATUS bound to: 8'b00000100 
+	Parameter ADDR_TXDATA bound to: 8'b00001000 
+	Parameter ADDR_RXDATA bound to: 8'b00001100 
+	Parameter ADDR_CONTROL bound to: 8'b00010000 
+	Parameter UART_ID bound to: 1430344276 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_core' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_core.v:3]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter TX_FIFO_DEPTH bound to: 16 - type: integer 
+	Parameter RX_FIFO_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Top_FIFO' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/Top_FIFO.v:3]
+	Parameter Data_Width bound to: 8 - type: integer 
+	Parameter Address_Depth bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_register' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_register.v:11]
+	Parameter Data_Width bound to: 8 - type: integer 
+	Parameter Address_Depth bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_register' (24#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_register.v:11]
+INFO: [Synth 8-6157] synthesizing module 'fifo_control' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_control.v:3]
+	Parameter Address_Depth bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_control' (25#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_FIFO' (26#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/Top_FIFO.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_FIFO__parameterized0' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/Top_FIFO.v:3]
+	Parameter Data_Width bound to: 8 - type: integer 
+	Parameter Address_Depth bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_register__parameterized0' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_register.v:11]
+	Parameter Data_Width bound to: 8 - type: integer 
+	Parameter Address_Depth bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_register__parameterized0' (26#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_register.v:11]
+INFO: [Synth 8-6157] synthesizing module 'fifo_control__parameterized0' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_control.v:3]
+	Parameter Address_Depth bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_control__parameterized0' (26#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/fifo_control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_FIFO__parameterized0' (26#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/fifo/Top_FIFO.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Top_uart' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/Top_UART.v:3]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tx' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/tx.v:3]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'tx' (27#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/tx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rx' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/rx.v:3]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'rx' (28#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baud_tick_16' [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/baud_tick_16oversample.v:2]
+	Parameter SYS_CLK bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter OVERSAMPLE bound to: 16 - type: integer 
+	Parameter ACC_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_tick_16' (29#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/baud_tick_16oversample.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Top_uart' (30#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_source/Top_UART.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_core' (31#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_core.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_apb_wrapper' (32#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/uart_peri/uart_apb_wrapper.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_APB' (33#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/apb/Top_APB.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'Top_module' (34#1) [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/sources_1/Top_module.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1118.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1118.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1118.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1118.531 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/constrs_1/Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/constrs_1/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.srcs/constrs_1/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1239.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1239.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.844 ; gain = 121.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.844 ; gain = 121.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.844 ; gain = 121.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'Top_Memory_CNTL'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'apb_mmio_bridge'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'tx'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_FETCH |                             0000 |                             0000
+               ST_DECODE |                             0001 |                             0001
+             ST_MEM_ADDR |                             0010 |                             0010
+             ST_MEM_READ |                             0011 |                             0011
+               ST_MEM_WB |                             0100 |                             0100
+            ST_MEM_WRITE |                             0101 |                             0101
+                ST_FAULT |                             0110 |                             1110
+               ST_EXEC_R |                             0111 |                             0110
+               ST_EXEC_I |                             1000 |                             1001
+               ST_WB_ALU |                             1001 |                             0111
+               ST_BRANCH |                             1010 |                             1000
+                  ST_JAL |                             1011 |                             1010
+                 ST_JALR |                             1100 |                             1011
+                  ST_LUI |                             1101 |                             1100
+                ST_AUIPC |                             1110 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                              000
+                ST_ERROR |                              001 |                              101
+            ST_MEM_START |                              010 |                              001
+             ST_MEM_WAIT |                              011 |                              010
+            ST_APB_START |                              100 |                              011
+             ST_APB_WAIT |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'Top_Memory_CNTL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              001 |                               00
+                ST_SETUP |                              010 |                               01
+               ST_ACCESS |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'one-hot' in module 'apb_mmio_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    DATA |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    DATA |                               10 |                               10
+                    STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1239.844 ; gain = 121.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 24    
+	   6 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 9     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 7     
+	   3 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 3     
+	   3 Input    6 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	  15 Input    4 Bit        Muxes := 3     
+	   9 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 2     
+	  15 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 2     
+	  15 Input    1 Bit        Muxes := 15    
+	   2 Input    1 Bit        Muxes := 45    
+	   3 Input    1 Bit        Muxes := 13    
+	   6 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 18    
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1309.297 ; gain = 190.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Top_module  | p_0_out    | 1024x32       | Block RAM      | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Top_module  | U_MEMORY/U_RAM/ram_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------+------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object                                           | Inference | Size (Depth x Width) | Primitives   | 
++-------------+------------------------------------------------------+-----------+----------------------+--------------+
+|\U_CPU/U_DP  | U_REG_FILE/register_file_reg                         | Implied   | 32 x 32              | RAM32M x 12	 | 
+|U_APB        | U_UART/U_UART_CORE/U_TX_FIFO/U_FIFO_REG/r_memory_reg | Implied   | 16 x 8               | RAM32M x 2	  | 
+|U_APB        | U_UART/U_UART_CORE/U_RX_FIFO/U_FIFO_REG/r_memory_reg | Implied   | 32 x 8               | RAM32M x 2	  | 
++-------------+------------------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1309.297 ; gain = 190.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1381.891 ; gain = 263.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Top_module  | U_MEMORY/U_RAM/ram_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++-------------+------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object                                           | Inference | Size (Depth x Width) | Primitives   | 
++-------------+------------------------------------------------------+-----------+----------------------+--------------+
+|\U_CPU/U_DP  | U_REG_FILE/register_file_reg                         | Implied   | 32 x 32              | RAM32M x 12	 | 
+|U_APB        | U_UART/U_UART_CORE/U_TX_FIFO/U_FIFO_REG/r_memory_reg | Implied   | 16 x 8               | RAM32M x 2	  | 
+|U_APB        | U_UART/U_UART_CORE/U_RX_FIFO/U_FIFO_REG/r_memory_reg | Implied   | 32 x 8               | RAM32M x 2	  | 
++-------------+------------------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U_MEMORY/U_RAM/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1392.062 ; gain = 273.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1394.695 ; gain = 276.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1394.695 ; gain = 276.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1394.695 ; gain = 276.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1394.695 ; gain = 276.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1394.762 ; gain = 276.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1394.762 ; gain = 276.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    49|
+|3     |LUT1     |    43|
+|4     |LUT2     |   128|
+|5     |LUT3     |    84|
+|6     |LUT4     |   335|
+|7     |LUT5     |   310|
+|8     |LUT6     |   681|
+|9     |MUXF7    |     1|
+|10    |RAM32M   |    16|
+|11    |RAMB36E1 |     2|
+|13    |FDCE     |   252|
+|14    |FDPE     |    24|
+|15    |FDRE     |   303|
+|16    |FDSE     |     3|
+|17    |IBUF     |    18|
+|18    |IOBUF    |     4|
+|19    |OBUF     |     1|
+|20    |OBUFT    |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1394.762 ; gain = 276.230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1394.762 ; gain = 154.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1394.762 ; gain = 276.230
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1407.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1407.824 ; gain = 289.293
+INFO: [Common 17-1381] The checkpoint 'D:/verilog_Ai_ondevice/In_progress/RISC-V_Multi_Cycle/RISC-V_Multi_Cycle.runs/synth_1/Top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_module_utilization_synth.rpt -pb Top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 30 09:09:01 2026...

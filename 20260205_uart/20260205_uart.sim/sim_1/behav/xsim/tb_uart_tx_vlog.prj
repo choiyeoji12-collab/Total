@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../20260205_uart.srcs/sources_1/imports/new/btn_debounce.v" \
+"../../../../20260205_uart.srcs/sources_1/new/uart_top.v" \
+"../../../../20260205_uart.srcs/sim_1/new/tb_uart_tx.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

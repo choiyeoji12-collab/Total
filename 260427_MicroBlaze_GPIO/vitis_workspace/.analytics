@@ -1,0 +1,96 @@
+timestamp=[2026-04-27 14:59:07], mode=WORKBENCH_START, duration=0:00:04.723, duration_ms=4723, data={}
+timestamp=[2026-04-27 14:59:08], mode=WORKBENCH_UI_INIT, duration=0:00:00.281, duration_ms=281, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2026-04-27 14:59:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.523, duration_ms=2523, data={}
+timestamp=[2026-04-27 15:00:46], mode=WORKBENCH_START, duration=0:00:04.136, duration_ms=4136, data={}
+timestamp=[2026-04-27 15:00:46], mode=WORKBENCH_UI_INIT, duration=0:00:00.440, duration_ms=440, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2026-04-27 15:00:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.041, duration_ms=2041, data={}
+timestamp=[2026-04-27 15:02:03], mode=APP_CREATION, duration=0:00:04.263, duration_ms=4263, data={name=FND_counter, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=microblaze_gpio8, application_type=application}
+timestamp=[2026-04-27 15:03:01], mode=PLATFORM_GENERATION, duration=0:00:03.617, duration_ms=3617, data={name=microblaze_gpio8}
+timestamp=[2026-04-27 15:03:02], mode=BUILD, duration=0:00:00.447, duration_ms=447, data={name=FND_counter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:03:02], mode=BUILD, duration=0:00:00.124, duration_ms=124, data={name=FND_counter_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:03:07], mode=BUILD, duration=0:00:00.698, duration_ms=698, data={name=FND_counter, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:05:44], mode=WORKBENCH_START, duration=0:00:07.243, duration_ms=7243, data={}
+timestamp=[2026-04-27 15:05:45], mode=WORKBENCH_UI_INIT, duration=0:00:00.489, duration_ms=489, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=FND_counter,FND_counter_system,RemoteSystemsTempFiles,microblaze_gpio8}
+timestamp=[2026-04-27 15:05:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.038, duration_ms=38, data={}
+timestamp=[2026-04-27 15:06:40], mode=APP_CREATION, duration=0:00:03.754, duration_ms=3754, data={name=fnd_controller, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=new1_design_1_wrapper, application_type=application}
+timestamp=[2026-04-27 15:07:19], mode=PLATFORM_GENERATION, duration=0:00:03.877, duration_ms=3877, data={name=new1_design_1_wrapper}
+timestamp=[2026-04-27 15:07:20], mode=BUILD, duration=0:00:00.952, duration_ms=952, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:38:17], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:39:21], mode=BUILD, duration=0:00:00.549, duration_ms=549, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:39:59], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:41:49], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-27 15:42:14], mode=BUILD, duration=0:00:00.098, duration_ms=98, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 10:21:28], mode=BUILD, duration=0:00:03.709, duration_ms=3709, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 10:21:47], mode=BUILD, duration=0:00:00.812, duration_ms=812, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:48:20], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:48:20], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:48:21], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:48:21], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:50:06], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:50:42], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:50:53], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:53:27], mode=BUILD, duration=0:00:00.173, duration_ms=173, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:57:32], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:57:50], mode=BUILD, duration=0:00:00.980, duration_ms=980, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:58:06], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 11:58:49], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:01:30], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:16:57], mode=BUILD, duration=0:00:00.624, duration_ms=624, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:16:57], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:19:27], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:28:05], mode=BUILD, duration=0:00:00.814, duration_ms=814, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:37:29], mode=BUILD, duration=0:00:00.430, duration_ms=430, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:39:16], mode=BUILD, duration=0:00:00.362, duration_ms=362, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:39:31], mode=BUILD, duration=0:00:00.177, duration_ms=177, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:39:44], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:47:37], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=fnd_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-04-28 12:47:37], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:48:32], mode=BUILD, duration=0:00:01.172, duration_ms=1172, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:49:33], mode=BUILD, duration=0:00:00.245, duration_ms=245, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:50:12], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:50:21], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:52:41], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:53:49], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 12:54:43], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 13:00:14], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 13:01:26], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:15:59], mode=BUILD, duration=0:00:00.808, duration_ms=808, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:17:01], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:17:41], mode=BUILD, duration=0:00:00.617, duration_ms=617, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:36:21], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:36:39], mode=BUILD, duration=0:00:00.627, duration_ms=627, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:41:41], mode=BUILD, duration=0:00:00.619, duration_ms=619, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:42:47], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:46:41], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:46:42], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:48:53], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 14:51:29], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:13:42], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:34:35], mode=BUILD, duration=0:00:00.246, duration_ms=246, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:34:53], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:35:30], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:36:43], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:42:54], mode=BUILD, duration=0:00:00.245, duration_ms=245, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:42:55], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:43:15], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:43:16], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:43:54], mode=BUILD, duration=0:00:00.415, duration_ms=415, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:43:54], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:44:00], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:44:00], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=fnd_controller_system, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:44:31], mode=BUILD, duration=0:00:00.419, duration_ms=419, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:45:24], mode=BUILD, duration=0:00:00.863, duration_ms=863, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:45:50], mode=BUILD, duration=0:00:00.920, duration_ms=920, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 15:47:27], mode=BUILD, duration=0:00:00.746, duration_ms=746, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-28 16:13:14], mode=BUILD, duration=0:00:01.045, duration_ms=1045, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:29:53], mode=BUILD, duration=0:00:01.556, duration_ms=1556, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:30:34], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:31:13], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=fnd_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-04-29 17:31:15], mode=BUILD, duration=0:00:01.797, duration_ms=1797, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:33:28], mode=BUILD, duration=0:00:01.561, duration_ms=1561, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:35:24], mode=BUILD, duration=0:00:01.300, duration_ms=1300, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:35:46], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:35:56], mode=BUILD, duration=0:00:00.244, duration_ms=244, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:36:25], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=fnd_controller, configuration=Debug, clean_build=false}
+timestamp=[2026-04-29 17:37:24], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=fnd_controller, configuration=Debug, clean_build=true}
+timestamp=[2026-04-29 17:37:25], mode=BUILD, duration=0:00:01.054, duration_ms=1054, data={name=fnd_controller, configuration=Debug, clean_build=false}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fnd_controller/src/ap/UpCount&apos; to &apos;UpCounter&apos;" description="Rename resource &apos;UpCount&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ap/UpCount" name="UpCounter" stamp="1777347747546" updateReferences="true"/>
+</session>

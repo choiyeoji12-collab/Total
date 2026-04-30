@@ -1,0 +1,19 @@
+`timescale 1ns / 1ps
+
+module register_8bit_sv (
+    input  logic       clk,
+    input  logic       rst,
+    input  logic       we,
+    input  logic [7:0] wdata,
+    output logic [7:0] rdata
+);
+
+    always_ff @(posedge clk, posedge rst) begin
+        if (rst) begin
+            rdata <= 0;
+        end else begin
+            if (we) rdata <= wdata;
+        end
+    end
+
+endmodule
